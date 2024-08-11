@@ -1,0 +1,16 @@
+import java.util.*;
+class Num_of_digits {
+    public static void main(String[] args)
+    {
+        int n,count=0;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter number");  //prompt for enter the number 
+        n=sc.nextInt();
+        while(n!=0)
+        {
+            n/=10;
+            count+=1;  // updating the count value
+        }
+        System.out.println("Number of digits:"+count); 
+    }
+}
